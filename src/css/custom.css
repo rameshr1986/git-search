@@ -1,0 +1,32 @@
+/** Custom css **/
+
+header{
+  background-color:#428bca;
+  color:#fff;
+  height:70px;
+}
+
+header div{
+position:fixed;
+top:0;
+}
+footer{
+background-color:#666;
+position:fixed;
+width:100%;
+color:#fff;
+font-size:0.8em;
+bottom:0;
+padding:1%;
+}
+
+.repository-list{
+   margin-top:2%;
+}
+.search-container{
+  margin: 5%;
+}
+
+.repository-search, .section{
+  margin-top:2%;
+}

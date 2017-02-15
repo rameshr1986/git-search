@@ -1,0 +1,8 @@
+<ul class="list-group repository-search section">
+      <a data-ng-href="{{repository.html_url}}" class="list-group-item list-group-item-action flex-column align-items-start" data-ng-repeat="repository in vm.repositories">
+     <div class="d-flex w-100 justify-content-between">
+      <h3 class="mb-1" data-ng-bind="repository.name"></h3>
+     </div>
+     <p class="mb-1" data-ng-bind="repository.description"></p>
+     </a>
+    </ul>

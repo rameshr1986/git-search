@@ -1,0 +1,14 @@
+<div class="container-fluid search-container">
+  <section class="row">
+   <article class="col-xs-12">
+     <div class="input-group">
+      <input type="text" class="form-control" value="" data-ng-model="vm.username" placeholder="Enter github user name"/>
+	  <div class="input-group-btn">
+            <button class="btn btn-primary" type="submit" data-ng-click="vm.getRepositories()"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </div>
+     </div>
+	 <error data-error="vm.error"></error>
+     <repositories-list data-repositories="vm.repositories"></repositories-list>
+  </article>
+ </section>
+</div>
