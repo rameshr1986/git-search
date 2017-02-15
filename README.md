@@ -90,12 +90,13 @@ It is a component to display error messages. It takes error object as input.
 error:{message:"error message"};
 
 Include wherever you want to display error message.
-
-**<Error data-error="error"></Error>**
-
+```html
+ <Error data-error="error"></Error>
+```
 ### repositoriesList
 
 This component is used to display the list of repositories next to search box. It takes repositories array as input.
-{::nomarkdown}
+```html
 <repository-list data-repositories="repositories"><repository-list>
+```
 {:/}
