@@ -1,6 +1,7 @@
 # git-search
 ## Introduction
-   This is an app where you can browse through git repositories based on username.
+   This is an app where you can browse through git repositories based on username. It is written using angular 1.5 with unit test coverage.
+   
    
    **The page is responsive and works in mobiles, tablets and other devices**
    
@@ -27,7 +28,7 @@
    
     Download as a zip folder and extract the contents.
     
-    Run cd angular-fashionapp or to root folder where you can see package.json, bower.json, gulpfile.js.
+    Run cd git-search or to root folder where you can see package.json, bower.json, gulpfile.js.
     
     Run npm install -g bower (in case if you do not have bower)
     
@@ -58,7 +59,7 @@ Code is modularized in to the following section and each one of them is self con
   
    
 ## Unit testing
-Unit test cases are written using **jasmine** and mocks are written using **angular-mocks** with **karama** as a test runner.
+Unit test cases are written using **jasmine** and mocks are written using **angular-mocks** with **karma** as a test runner.
 To run unit test run **"karma start karma.conf.js"**. It generates html report using html reporter and you find clean html coverage report with **full unit test coverage** for all files
 
 Folder structure is same but under src/test folder
@@ -71,7 +72,7 @@ Also it gives a **coverage report** under **coverage/googlechrome..../index.html
 
 ## Components
 
-The following are the components that are created
+The following are the reusable components that are created as part of tha app.
 
 ### Header 
 
