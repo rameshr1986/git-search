@@ -90,9 +90,8 @@ It is a component to display error messages. It takes error object as input.
 error:{message:"error message"};
 
 Include wherever you want to display error message.
-{::nomarkdown}
-<Error data-error="error"></Error>
-{:/}
+
+**<Error data-error="error"></Error>**
 
 ### repositoriesList
 
