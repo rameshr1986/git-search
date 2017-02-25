@@ -1,8 +1,9 @@
 (function() {
-'use strict';
+  'use strict';
 
-angular.module('app', [
-	'app.common',
-	'app.home'
-]);
+  angular.module('app', [
+    'app.common',
+    'app.repositorydetail',
+    'app.home'
+  ]).value("$routerRootComponent", "main");
 })();

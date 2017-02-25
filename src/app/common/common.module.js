@@ -2,7 +2,7 @@
 @namespace common
 */
 (function() {
-'use strict';
+  'use strict';
 
-angular.module('app.common', ['ui.router']);
+  angular.module('app.common', ["ui.router"]);
 })();

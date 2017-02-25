@@ -2,7 +2,7 @@
 @namespace home
 */
 (function() {
-'use strict';
+  'use strict';
 
-angular.module('app.home', ['ui.router']);
+  angular.module('app.home', []);
 })();

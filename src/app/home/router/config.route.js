@@ -5,30 +5,35 @@
  * @returns {object} state
  */
 (function() {
-    'use strict';
+  'use strict';
 
-    angular
-        .module('app.home')
-        .run(appRun);
+  angular
+    .module('app.home')
+    .run(appRun);
 
-    appRun.$inject = ['routerHelper']
+  appRun.$inject = ['routerHelper']
 
-    /* @ngInject */
-    function appRun(routehelper) {
-        routehelper.configureStates(getStates(), 'home');
-    }
+  /* @ngInject */
+  function appRun(routehelper) {
+    routehelper.configureStates(getStates(), 'home');
+  }
 
-    function getStates() {
+  function getStates() {
     return [
-        {
-            state: 'home',
-            config: {
-                templateUrl: 'views/home.html',
-                url: '/home',
-				controller: 'HomeCtrl',
-				controllerAs: 'vm'
-            }
+      {
+        state: 'home',
+        config: {
+          url: '/home',
+          component: 'home'
         }
+      },
+      {
+        state: 'home.search',
+        config: {
+          url: '/:key',
+          component: 'home'
+        }
+      }
     ];
-}
+  }
 })();

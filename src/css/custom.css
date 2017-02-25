@@ -1,32 +1,39 @@
 /** Custom css **/
-
-header{
-  background-color:#428bca;
-  color:#fff;
-  height:70px;
+body{
+margin-bottom:3%;
 }
-
-header div{
-position:fixed;
-top:0;
-}
-footer{
-background-color:#666;
-position:fixed;
-width:100%;
-color:#fff;
-font-size:0.8em;
-bottom:0;
-padding:1%;
+i {
+  padding-right:5px;
 }
 
 .repository-list{
    margin-top:2%;
 }
+.container-tab{
+  margin-left:5%;
+  margin-right:5%;
+}
 .search-container{
   margin: 5%;
 }
 
-.repository-search, .section{
-  margin-top:2%;
+text[text-anchor='start'] {
+  display: none;
+}
+
+
+.text-center{
+  text-align:center;
+}
+.text-right{
+  text-align:right;
+}
+
+.root-view.ng-cloak{
+  opacity:0;
+
+}
+.root-view{
+  opacity:1;
+  transition: opacity 1s;
 }

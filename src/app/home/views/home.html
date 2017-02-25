@@ -3,15 +3,20 @@
    <article class="col-xs-12">
      <form>
 	 <div class="input-group">
-	 
-      <input type="text" class="form-control" value="" data-ng-model="vm.username" placeholder="Enter github user name"/>
-	  <div class="input-group-btn">
+      <input type="text" class="form-control" value="" data-ng-model="vm.searchKey" placeholder="Search repository"/>
+	    <div class="input-group-btn">
             <button class="btn btn-primary" type="submit" data-ng-click="vm.getRepositories()"><i class="fa fa-search" aria-hidden="true"></i></button>
       </div>
-	  
      </div>
-	 <error data-error="vm.error"></error>
-     <repositories-list data-repositories="vm.repositories"></repositories-list>
+     <loading data-flag="vm.isPageLoading"></loading>
+     <message data-message="'No repositories found'" data-flag="vm.hasResults"></message>
+     <div data-ng-if="vm.repositories.length>0" class="search-results">
+      <div class="row">
+        <div class="col-md-6"><h3>Total {{vm.totalCount}} repositories found</h3></div>
+        <div class="col-md-6 text-right"><paging data-get-data="vm.getRepositories()" data-links="vm.links" data-options="vm.options"></paging></div>
+      </div>
+      <repositories-list data-repositories="vm.repositories"></repositories-list>
+     </div>
 	 </form>
   </article>
  </section>
