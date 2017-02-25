@@ -1,0 +1,19 @@
+<section>
+  <nav aria-label="pagination">
+    <ul class="pagination">
+      <li class="page-item" data-ng-class="{'disabled': !vm.link.first}">
+        <a class="page-link"  data-ng-click="vm.update('first')" tabindex="-1">First</a>
+      </li>
+      <li class="page-item" data-ng-class="{'disabled': !vm.link.prev}">
+        <a class="page-link"  data-ng-click="vm.update('prev')" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="nolink" href="#">Page {{vm.options.page}} of {{vm.lastPage}}</a></li>
+      <li class="page-item"  data-ng-class="{'disabled': !vm.link.next}">
+        <a class="page-link"  data-ng-click="vm.update('next')">Next</a>
+      </li>
+      <li class="page-item" data-ng-class="{'disabled': !vm.link.last}">
+        <a class="page-link"  data-ng-click="vm.update('last')">Last</a>
+      </li>
+    </ul>
+  </nav>
+</section>

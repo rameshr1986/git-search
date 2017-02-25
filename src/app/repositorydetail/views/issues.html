@@ -1,0 +1,30 @@
+<section>
+  <div class="container-tab">
+    <div class="row">
+      <div class="col-md-6"><h3>Total {{vm.repository.open_issues_count}} issues found</h3></div>
+      <div class="col-md-6 text-right"><paging class="text-right" data-ng-if="vm.issues.length>0" data-get-data="vm.getIssues()" data-links="vm.links" data-options="vm.options"></paging></div>
+    </div>
+  <nav class="navbar navbar-default plain">
+      <ul class="nav navbar-nav icon-text plain">
+        <li>
+        <a href="" data-ng-click="vm.getIssues()">
+          <i class="fa fa-exclamation-circle green"></i>
+          {{vm.repository.open_issues_count}} open
+        </a>
+      </li>
+      </ul>
+  </nav>
+  <loading data-flag="vm.isPageLoading"></loading>
+  <message data-message="'No issues found'" data-flag="vm.hasResults"></message>
+  <article data-ng-if="vm.issues.length>0">
+    <ul class="list-items icon-text" data-ng-hide="vm.isPageLoading">
+     <li data-ng-repeat="issue in vm.issues">
+       <h3 class="mb-1"><i class="fa fa-exclamation-circle green"></i>{{issue.title}}</h3>
+       <p class="mb-1">
+         <small><strong>{{issue.number}}</strong> opened on {{issue.created_at | date : medium : short}}</small>
+       </p>
+     </li>
+   </ul>
+ </article>
+ </div>
+</section>

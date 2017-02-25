@@ -1,0 +1,25 @@
+<section class="tabs">
+<article>
+<div class="container">
+<div>
+  <h3><a ui-sref="home">{{vm.repository.full_name}}</a></h3>
+  <button class="btn btn-primary pull-right" data-ng-click="vm.goBack()">Back to search results</button>
+</div>
+  <ul class="card-status icon-text">
+       <li><i class="fa fa-code-fork"></i><span data-ng-bind="vm.repository.forks_count"></span></li>
+       <li><i class="fa fa-star"></i><span data-ng-bind="vm.repository.stargazers_count"></span></li>
+       <li>Open issues <span class="badge" data-ng-bind="vm.repository.open_issues_count"></span></li>
+  </ul>
+
+</div>
+  <div data-ng-if="vm.repository">
+<ul class="nav nav-tabs icon-text">
+  <li ui-sref-active="active"><a ui-sref="repository.code"><i class="fa fa-code"></i>Code</a></li>
+  <li ui-sref-active="active"><a ui-sref="repository.issues"><i class="fa fa-exclamation-circle"></i>Issues</a></li>
+  <li ui-sref-active="active"><a ui-sref="repository.chart"><i class="fa fa-bar-chart-o"></i>Chart</a></li>
+</ul>
+<div class="container-fluid">
+<ui-view repository="vm.repository" properties="vm.chartProperties"><ui-view>
+</div>
+</article>
+</section>
