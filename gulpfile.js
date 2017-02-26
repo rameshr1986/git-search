@@ -33,7 +33,7 @@ gulp.task('lint', function() {
     //.pipe(jshint())
     //.pipe(jshint.reporter('default'))
     .pipe(concat('app.min.js'))
-    //.pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest(path.build));
 });
 // Images task
