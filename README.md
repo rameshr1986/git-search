@@ -21,7 +21,7 @@
    6. Run "bower install"
    7. Run "gulp"
    
-   Once the server starts you can hit at the url at http://localhost:8000. 
+   Once the server starts you can hit at the url at http://localhost:9000. 
    
    
    Alternatively
@@ -40,7 +40,7 @@
     
    Run gulp 
    
-   and wait till server starts at http://localhost:8000
+   and wait till server starts at http://localhost:9000
    
    
    
