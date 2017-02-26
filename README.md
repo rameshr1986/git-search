@@ -15,11 +15,11 @@
 ## Installation and running the application
    1. Extract the code from github repository. **git clone "https://github.com/rameshr1986/git-search.git"** 
    2. Run cd git-search
-   3. Run npm install -g bower (in case if you do not have bower)
-   4. Run npm install -g gulp  (in case if you do not have gulp globally installed)
-   5. Run npm install   
-   6. Run bower install
-   7. Run gulp
+   3. Run "npm install -g bower" (in case if you do not have bower)
+   4. Run "npm install -g gulp"  (in case if you do not have gulp globally installed)
+   5. Run "npm install"   
+   6. Run "bower install"
+   7. Run "gulp"
    
    Once the server starts you can hit at the url at http://localhost:8000. 
    
