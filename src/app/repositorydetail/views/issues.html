@@ -19,7 +19,11 @@
   <article data-ng-if="vm.issues.length>0">
     <ul class="list-items icon-text" data-ng-hide="vm.isPageLoading">
      <li data-ng-repeat="issue in vm.issues">
+<<<<<<< HEAD
        <h3 class="mb-1"><i class="fa fa-exclamation-circle red"></i>{{issue.title}}</h3>
+=======
+       <h3 class="mb-1"><i class="fa fa-exclamation-circle green"></i>{{issue.title}}</h3>
+>>>>>>> 4396d0a623c8250cb189595b9ec83a0761b30455
        <p class="mb-1">
          <small><strong>{{issue.number}}</strong> opened on {{issue.created_at | date : medium : short}}</small>
        </p>

@@ -1,6 +1,7 @@
 /**
 * Display links in navigation
 **/
+
 .navbar-inverse{
   background-color: rgb(66, 139, 202);
   border-radius:0;
@@ -9,6 +10,7 @@
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a{
   color:#fff;
 }
+
 .navbar.navbar-default.plain{
   border-radius:0;
   margin-bottom:0;
@@ -29,7 +31,6 @@ ul.card-status{
     padding:0 0.5em;
     float:left;
  }
-
  ul li a{
    color:#428bca;
    text-decoration:none;
