@@ -1,0 +1,43 @@
+/** Custom css **/
+body{
+margin-bottom:3%;
+}
+i {
+  padding-right:5px;
+}
+
+.repository-list{
+   margin-top:2%;
+}
+.container-tab{
+  margin-left:5%;
+  margin-right:5%;
+}
+.search-container{
+  margin: 5%;
+}
+
+text[text-anchor='start'] {
+  display: none;
+}
+
+h1,h2,h3,h4,h5,h6,span,div,section,article{
+  font-family:'Roboto';
+}
+
+
+.text-center{
+  text-align:center;
+}
+.text-right{
+  text-align:right;
+}
+
+.root-view.ng-cloak{
+  opacity:0;
+
+}
+.root-view{
+  opacity:1;
+  transition: opacity 1s;
+}

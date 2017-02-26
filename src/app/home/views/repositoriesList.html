@@ -1,0 +1,18 @@
+<div class="repository-search">
+      <div  class="panel panel-default" data-ng-repeat="repository in vm.repositories">
+        <div class="panel-body">
+     <div class="d-flex w-100 justify-content-between">
+      <h4 class="mb-1">
+       <a ui-sref="repository.issues({username:repository.owner.login, reponame:repository.name})"><em>{{repository.full_name}}</em></a>
+       <div><small><a href="#" target="_blank" class="text-muted" data-ng-href="{{repository.html_url}}"> {{repository.html_url}}</a></small></div>
+     </h4>
+     </div>
+     <p class="mb-1" data-ng-bind="repository.description"></p>
+     <ul class="card-status icon-text">
+       <li><i class="fa fa-code-fork green"></i><span data-ng-bind="repository.forks_count"></span></li>
+       <li><i class="fa fa-star orange"></i><span data-ng-bind="repository.stargazers_count"></span></li>
+       <li><i class="fa fa-exclamation-circle red"></i><span data-ng-bind="repository.open_issues_count"></span></li>
+     </ul>
+   </div>
+   </div>
+</div>
