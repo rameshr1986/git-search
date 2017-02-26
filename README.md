@@ -1,9 +1,9 @@
 # git-search
 ## Introduction
-   This is an app where you can browse through git repositories and view the issues. It is written using angular 1.5 with unit test coverage using karma and jasmine.
+   This is an app where you can browse through git repositories and view the issues. It is written using angular 1.5 with unit test coverage using karma and jasmine. Bower, npm are used as package managers and gulp as building tool.
    
+   Bootstrap css framework is used for ui components.
    
-   **The page is responsive and works in mobiles, tablets and other devices**
    
   
    
