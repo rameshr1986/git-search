@@ -1,6 +1,6 @@
 # git-search
 ## Introduction
-   This is an app where you can browse through git repositories based on username. It is written using angular 1.5 with unit test coverage.
+   This is an app where you can browse through git repositories and view the issues. It is written using angular 1.5 with unit test coverage using karma and jasmine.
    
    
    **The page is responsive and works in mobiles, tablets and other devices**
@@ -56,6 +56,8 @@ Code is modularized in to the following section and each one of them is self con
     
     ---common    --> Its a module where it contains components such as header and footer.
     
+    ---repositoryydetail -- > It isa module where it contains the detail of individual repository.
+    
   
    
 ## Unit testing
@@ -70,33 +72,3 @@ Folder structure is same but under src/test folder
  
 Also it gives a **coverage report** under **coverage/googlechrome..../index.html **
 
-## Components
-
-The following are the reusable components that are created as part of tha app.
-
-### Header 
-
-Header component which is the header of the page. It might be used across various pages , so it is created as a common component.
-
-
-### Footer 
-
-Footer component which is the header of the page. It might be used across various pages , so it is created as a common component.
-
-### Error
-
-It is a component to display error messages. It takes error object as input.
-
-error:{message:"error message"};
-
-Include wherever you want to display error message.
-```html
- <Error data-error="error"></Error>
-```
-### repositoriesList
-
-This component is used to display the list of repositories next to search box. It takes repositories array as input.
-```html
-<repository-list data-repositories="repositories"><repository-list>
-```
-{:/}
